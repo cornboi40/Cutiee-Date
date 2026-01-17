@@ -1,0 +1,172 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;500&display=swap');
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #fff6e6;
+}
+
+/* ===== LOGIN ===== */
+.login-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #b70517, #b70517);
+}
+
+.login-card {
+  background: #fff6e6;
+  width: 380px;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+}
+
+h1 {
+  text-align: center;
+  color: #bb0000;
+}
+
+.subtitle {
+  text-align: center;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+label {
+  margin-top: 12px;
+  display: block;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background: #bb0000;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  display: none;
+}
+
+/* ===== DASHBOARD ===== */
+.owner-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  font-family: 'Parisienne', cursive;
+  font-size:23px;
+  width: 220px;
+  background: black;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar h3 {
+  color: #ffc9d9;
+}
+
+.sidebar a {
+  display: block;
+  padding: 12px;
+  margin-bottom: 8px;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.sidebar a.active,
+.sidebar a:hover {
+  background: #ffc9d9;
+}
+
+.main-content {
+  flex: 1;
+}
+
+.topbar {
+  background: #bb0000;
+  padding: 16px 24px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  color: #ffd1dc;
+}
+
+.content {
+  padding: 24px;
+}
+
+.card {
+  background: #bb0000;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  color: #ffd1dc;
+}
+
+.image-card img {
+  width: 100%;
+  padding: 0px;
+  border-radius: 12px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.full-image-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.full-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* fills screen, no padding */
+  display: block;
+}
+
+/* Bottom-right button */
+.more-btn {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+
+  padding: 12px 20px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.more-btn:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+

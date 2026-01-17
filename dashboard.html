@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>To My Love</title>
+  <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="owner-layout">
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <h3>My Beautiful Cutiee of no equal</h3>
+    <a class="active" onclick="showTab('invite')">Dinner Date</a>
+    <a onclick="showTab('wear')">Dressing Up</a>
+    <a onclick="showTab('after')">Plans After</a>
+    <a onclick="showTab('love')">Love Cutiee</a>
+    <a href="login.html">Logout</a>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="main-content">
+
+    <!-- INVITATION TAB -->
+    <div id="invite" class="tab">
+      <div class="topbar"><h2>A Date with My Love 💐</h2></div>
+      <div class="content">
+        <div class="card">
+       <div class="card image-card">
+         <img src="date.jpg" alt="Invitation Image">
+       </div>
+          <p>
+            .
+          </p>
+
+          <p><strong>Date:</strong> 22 January 2026</p>
+          <p><strong>Time:</strong> 6:00 PM</p>
+          <p><strong>Place:</strong> Cutiee will have to follow me there, Hehehehhehehhe</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- WHAT TO WEAR -->
+    <div id="wear" class="tab" style="display:none">
+      <div class="topbar"><h2>Dressing up with my Love 👗</h2></div>
+      <div class="content">
+        <div class="card">
+       <div class="card image-card">
+         <img src="dress.jpg" alt="Invitation Image">
+       </div>
+          <ul>
+            <li> We will be walking abit, so footwear that Cutiee will be comfortable in</li>
+            <li>Anything Cutiee wear, cutiee will make it look good</li>
+            <li>Love you✨</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- WHAT WE'RE DOING AFTER -->
+    <div id="after" class="tab" style="display:none">
+      <div class="topbar"><h2>After Dinner 🍽️</h2></div>
+      <div class="content">
+        <div class="card">
+       <div class="card image-card">
+         <img src="After.jpg" alt="Invitation Image">
+       </div>
+          <p>
+            After dinner:
+          </p>
+          <ul>
+            <li>Desserts</li>
+            <li>We will be walking abit</li>
+            <li>Yapping with my favorite person</li>
+            <li>Photo Booth</li>
+            <li>Kissing you lots</li>
+            <li>Ending the night with a view</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Note Tab -->
+    <div id="love" class="tab" style="display:none">
+      <div class="topbar"><h2>Thank You for Being You My Love</h2></div>
+      <div class="content">
+        <div class="card">
+       <div class="card image-card">
+         <img src="cutiee's note.jpg" alt="Note Image">
+       </div>
+          <p>
+             I Love You To No End My Beautiful Lover
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+</div>
+
+<script>
+  function showTab(tabId) {
+    document.querySelectorAll(".tab").forEach(t => t.style.display = "none");
+    document.getElementById(tabId).style.display = "block";
+
+    document.querySelectorAll(".sidebar a").forEach(a => a.classList.remove("active"));
+    event.target.classList.add("active");
+  }
+</script>
+
+</body>
+</html>

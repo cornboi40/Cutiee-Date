@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TO MY LOVE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="login-wrapper">
+  <div class="login-card">
+    <h1>Invatation for Cutieee</h1>
+    <p class="subtitle">i love my Cutiee</p>
+
+    <form id="loginForm">
+      <label>Username</label>
+      <input type="text" id="username" required placeholder="Cutiee's name">
+  
+      <label>Password</label>
+      <input type="password" id="password" required placeholder="I saved your contact as...">
+
+      <div class="error" id="error">Invalid login details</div>
+
+      <button class="btn" type="submit">Click Here My Love</button>
+    </form>
+  </div>
+</div>
+
+<script>
+  // 🔒 Hardcoded credentials (change later)
+  const USERNAME = "Nuva";
+  const PASSWORD = "Cutiee My Love";
+
+  document.getElementById("loginForm").addEventListener("submit", e => {
+    e.preventDefault();
+
+    if (
+      username.value === USERNAME &&
+      password.value === PASSWORD
+    ) {
+      window.location.href = "invite.html";
+    } else {
+      error.style.display = "block";
+    }
+  });
+</script>
+
+</body>
+</html>
